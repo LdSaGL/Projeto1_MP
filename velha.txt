@@ -1,0 +1,13 @@
+O valor 0 significa que a posição está vazia
+O valor 1 significa que a posição está com um X
+O valor 2 significa que a posição está com um O
+Retorna 1 se o vencedor foi o X
+Retorna 2 se o vencedor foi o O
+Casos possíveis para ganhar:
+    Sequencia de 3 na diagonal, horizontal ou vertical
+Retorna 0 se o jogo está empatado
+    Todos os espaços preenchidos sem nenhum ganhador
+Retorna -1 se o jogo está indefinido (ex. tem apenas um X)
+    Espaços em branco sem ganhador definido
+Retorna -2 se o jogo é com certeza impossível pelas regras (ex. todas as posições são X)
+    Quantidade de X > quantidade de O + 1
