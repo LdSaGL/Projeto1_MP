@@ -1,4 +1,4 @@
-def JogoDaVelha (matriz):
+def JogoDaVelha(matriz):
     qntd_X, qntd_O, qntd_branco = PosicoesJogo(matriz)
     ganhador = VerificaGanhador(matriz)
     if qntd_X >= qntd_O + 2 or qntd_O > qntd_X:
@@ -11,7 +11,8 @@ def JogoDaVelha (matriz):
     else:
         return ganhador
 
-def PosicoesJogo (matriz):
+
+def PosicoesJogo(matriz):
     qntd_X = 0
     qntd_O = 0
     for i in matriz:
@@ -24,7 +25,7 @@ def PosicoesJogo (matriz):
     return qntd_X, qntd_O, qntd_branco
 
 
-def VerificaGanhador (matriz):
+def VerificaGanhador(matriz):
     for i in range(0, 3):
         if matriz[i][0] == matriz[i][1] == matriz[i][2]:
             if matriz[i][0] != 0:
@@ -32,15 +33,15 @@ def VerificaGanhador (matriz):
         if matriz[0][i] == matriz[1][i] == matriz[2][i]:
             if matriz[0][i] != 0:
                 return matriz[0][i]
-    if matriz[0][0] == matriz[1][1] == matriz[2][2] or matriz[0][2] == matriz[1][1] == matriz[2][0]:
+    diagonalPrincipal = matriz[0][0] == matriz[1][1] == matriz[2][2]
+    diagonalSecundaria = matriz[0][2] == matriz[1][1] == matriz[2][0]
+    if diagonalPrincipal or diagonalSecundaria:
         if matriz[1][1] != 0:
             return matriz[1][1]
     return 0
 
-entrada = [[1, 0, 0], 
-           [2, 1, 2], 
+entrada = [[1, 0, 0],
+           [2, 0, 2],
            [0, 0, 1]]
 
 print(JogoDaVelha(entrada))
-
-
