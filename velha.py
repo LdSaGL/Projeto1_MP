@@ -1,9 +1,9 @@
 def JogoDaVelha(matriz):
-    qntd_X, qntd_O, qntd_branco = PosicoesJogo(matriz)
+    qntd_X, qntd_O, qntd_branco = QuantidadesTermos(matriz)
     ganhador = VerificaGanhador(matriz)
     if qntd_X >= qntd_O + 2 or qntd_O > qntd_X:
         return -2
-    elif ganhador == 0:
+    elif ganhador == "indefinidoOUempatado":
         if qntd_branco == 0:
             return 0
         else:
@@ -12,7 +12,7 @@ def JogoDaVelha(matriz):
         return ganhador
 
 
-def PosicoesJogo(matriz):
+def QuantidadesTermos(matriz):
     qntd_X = 0
     qntd_O = 0
     for i in matriz:
@@ -38,10 +38,10 @@ def VerificaGanhador(matriz):
     if diagonalPrincipal or diagonalSecundaria:
         if matriz[1][1] != 0:
             return matriz[1][1]
-    return 0
+    return "indefinidoOUempatado"
 
 entrada = [[1, 0, 0],
-           [2, 0, 2],
-           [0, 0, 1]]
+           [2, 2, 2],
+           [0, 1, 1]]
 
 print(JogoDaVelha(entrada))

@@ -1,13 +1,52 @@
-O valor 0 significa que a posição está vazia
-O valor 1 significa que a posição está com um X
-O valor 2 significa que a posição está com um O
-Retorna 1 se o vencedor foi o X
-Retorna 2 se o vencedor foi o O
-Casos possíveis para ganhar:
-    Sequencia de 3 na diagonal, horizontal ou vertical
-Retorna 0 se o jogo está empatado
-    Todos os espaços preenchidos sem nenhum ganhador
-Retorna -1 se o jogo está indefinido (ex. tem apenas um X)
-    Espaços em branco sem ganhador definido
-Retorna -2 se o jogo é com certeza impossível pelas regras (ex. todas as posições são X)
-    Quantidade de X > quantidade de O + 1
+1.0 - Instruções do roteiro:
+    1.1  - O valor 0 significa que a posição está vazia
+    1.2  - O valor 1 significa que a posição está com um X
+    1.3  - O valor 2 significa que a posição está com um O
+    1.4  - Retorna 1 se o vencedor foi o X
+    1.5  - Retorna 2 se o vencedor foi o O
+
+    1.6  - Tem como parâmetro a matriz 3x3 inteiros
+    1.7  - Retorna  1 se o vencedor foi o X
+    1.8  - Retorna  2 se o vencedor foi o O
+    1.9  - Retorna  0 se o jogo está empatado
+    1.10 - Retorna -1 se o jogo está indefinido
+    1.11 - Retorna -2 se o jogo é com certeza impossível pelas regras
+
+2.0 - Proposições lógicas para o problema em questão
+    2.1 - O X sempre começa
+    2.2 - 3 casos possíveis para um dos jogadores ganhe:
+        2.2.1 - Diagonal   - Testar para a diagonal principal e para a diagonal secundária
+        2.2.2 - Horizontal - Fixar a linha e percorrê-la com range de (0,3)
+        2.2.3 - Vertical   - Fixar a coluna e comparar os termos de mesma posição nas lihas
+
+    2.3 - Condições para um jogo empatado
+        2.3.1 - Não ser impossível
+        2.3.2 - Não ter espaços em branco
+        2.3.4 - Não ter nenhum ganhador
+
+    2.4 - Condições para um jogo indefinido
+        2.4.1 - Ter espaços em branco
+        2.4.2 - Não ser impossível
+        2.4.3 - Não ter nenhum ganhador
+
+    2.5 - Condições para um jogo impossível:
+        2.5.1 - Quantidade de X > quantidade de O + 1
+        2.5.2 - Quantidade de O > quantidade de X
+
+3.0 - Função "JogoDaVelha" -> A implementação do programa 
+    3.1 - Tendo em vista que a condição mais geral é "não ser impossível", comecei a função por ela
+        3.1.1 - Para verificar a condição, tenho que contar a quantidade de X e O
+        3.1.2 - Para isso criei uma outra função "QuantidadesTermos" para contar as aparições
+            3.1.2.1 - Aproveitando a função, contei os espaços em branco, já que serão úteis no futuro
+        3.1.3 - Implementei as condições mencionadas anteriormente (Tópico 2.5)
+    
+    3.2 -  A próxima condição mais geral é "não ter um ganhador"
+        3.2.1 - Para constatar se há ganhador, implementei a função "VerificaGanhador"
+        3.2.2 - Utilizei as proposições do tópico 2.2 e retornei quem ganhou (1{X} ou 2{Y})
+            3.2.2.1 - No caso de não haver ganhador, retornei "indefinidoOUempatado"
+    
+    3.3 - No caso de haver ganhador, o programa está pronto, mas falta separar indefinido de empatado
+        3.3.1 - O que difere os 2 é a ausência ou não de espaços em branco
+            3.3.1.1 - Para isso, utilizei o contador implementado anteriormente na função "QuantidadesTermos"
+
+4.0 - Implementação dos testes
