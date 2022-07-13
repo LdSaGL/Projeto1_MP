@@ -1,0 +1,79 @@
+git log
+commit cc8d004b0062dfcce3fbc3af5cb7ad6995e792de (HEAD -> master, origin/master)
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 23:21:02 2022 -0300
+
+    Trabalho Concluido
+
+commit e98e8857656491b766b590a02273ef38e36ac2e3
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 23:18:52 2022 -0300
+
+    Testes com O vencedor
+
+commit f02368e7e159e23f05faea77deade3b1533ed8bc
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 23:00:45 2022 -0300
+
+    Testes para X vencedor
+
+commit b6963cc5ad7aaf477137eec0d12be8f8012b19e7
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 22:53:23 2022 -0300
+
+    Erro com dois ganhadores - Resolvido
+
+commit e47b4c3e909a8665deaa703d6fea26d73a637667
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 22:45:35 2022 -0300
+
+    Erro jogo com dois ganhadores
+
+commit 407a2efbf69d80394f40c9df71b6b870d581dcb5
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 22:43:34 2022 -0300
+
+    Teste para jogo empatado
+
+commit b360bec273dd8975e7256aaf05b415a583247898
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 22:40:04 2022 -0300
+
+    Teste para jogos indefinidos
+
+commit 808105fbc4dde0c263c198ccae82e68a20b97883
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 22:39:11 2022 -0300
+
+    Testes para jogos indefinidos
+
+commit 1976f1003addfbd0479795e15893976edea66a0b
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 22:32:40 2022 -0300
+
+    Testes para jogos impossíveis
+
+commit 84a0fcbe603ae446828df1a63e12746edca6a172
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 22:12:58 2022 -0300
+
+    Testei o funcionamento do pytest
+
+commit d5ca81f6b97f64f11d9f44040a489ca7036556e6
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 22:11:00 2022 -0300
+
+    Transcrevi a sequência lógica utilizada
+
+commit ebf1f3209c7fa06f62c4592d0e099f49e7da3e3a
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 19:23:05 2022 -0300
+
+    Adequação ao Pylint
+
+commit 52684ef3015740aacb03055379f183205dd92ca3
+Author: LdSaGL <lucas.sa.licio@gmail.com>
+Date:   Tue Jul 12 18:49:40 2022 -0300
+
+    Implementação do Jogo da Velha
+(END)
