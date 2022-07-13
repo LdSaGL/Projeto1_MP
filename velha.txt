@@ -67,3 +67,7 @@ Observação: por algum motivo não estava conseguindo importar o pytest no prog
         4.2.3 - Uma coluna em branco
     4.3 - Jogos empatados
         4.3.1 - Sem espaço em branco e sem vencedor
+    4.4 - Jogos com X vencedor
+        4.4.1 - Vencedor na diagonal
+        4.4.1 - Vencedor na horizontal
+        4.4.1 - Vencedor na vertical

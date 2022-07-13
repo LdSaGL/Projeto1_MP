@@ -43,3 +43,20 @@ def testeJogoIndefinido_3():
 
 def testeJogoEmpatado():
     assert velha.JogoDaVelha([[1, 2, 2], [2, 1, 1], [1, 1, 2]]) == 0
+
+
+# Testes para jogos com X ganhador
+
+
+def testeJogoVencedorX_1():
+    assert velha.JogoDaVelha([[1, 0, 0], [0, 1, 2], [0, 2, 1]]) == 1
+
+
+def testeJogoVencedorX_2():
+    assert velha.JogoDaVelha([[0, 2, 0], [1, 1, 1], [2, 0, 2]]) == 1
+
+
+def testeJogoVencedorX_3():
+    assert velha.JogoDaVelha([[1, 2, 0], [1, 1, 2], [1, 2, 0]]) == 1
+
+
