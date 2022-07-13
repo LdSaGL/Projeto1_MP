@@ -1,7 +1,9 @@
 def JogoDaVelha(matriz):
     qntd_X, qntd_O, qntd_branco = QuantidadesTermos(matriz)
     ganhador = VerificaGanhador(matriz)
-    if qntd_X >= qntd_O + 2 or qntd_O > qntd_X or ganhador == 'impossivel':
+    if qntd_branco == 9:
+        return -1
+    elif qntd_X > qntd_O + 1 or qntd_O > qntd_X or ganhador == 'impossivel':
         return -2
     elif ganhador == "indefinidoOUempatado":
         if qntd_branco == 0:

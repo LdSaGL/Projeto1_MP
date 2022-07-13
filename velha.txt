@@ -40,8 +40,9 @@
         3.1.2 - Para isso criei uma outra função "QuantidadesTermos" para contar as aparições
             3.1.2.1 - Aproveitando a função, contei os espaços em branco, já que serão úteis no futuro
         3.1.3 - Implementei as condições mencionadas anteriormente (Tópico 2.5)
-        3.1.4 - Adicionado após acrescentar o caso com dois ganhadores
+        3.1.4 - ERRO. Adicionado após acrescentar o caso com dois ganhadores
             3.1.4.1 - Incrementei a função "VerificaGanhador" para suprir esse caso
+        3.1.5 - Complementação da condicional inicial caso a quanidade de brancos seja igual a 9 já definir como indefinido
     
     3.2 -  A próxima condição mais geral é "não ter um ganhador"
         3.2.1 - Para constatar se há ganhador, implementei a função "VerificaGanhador"
@@ -71,3 +72,7 @@ Observação: por algum motivo não estava conseguindo importar o pytest no prog
         4.4.1 - Vencedor na diagonal
         4.4.1 - Vencedor na horizontal
         4.4.1 - Vencedor na vertical
+    4.5 - Jogos com O vencedor
+        4.5.1 - Vencedor na diagonal
+        4.5.1 - Vencedor na horizontal
+        4.5.1 - Vencedor na vertical

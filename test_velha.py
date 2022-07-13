@@ -31,11 +31,11 @@ def testeJogoIndefinido_1():
 
 
 def testeJogoIndefinido_2():
-    assert velha.JogoDaVelha([[0, 0, 0], [1, 2, 1], [2, 1, 2]]) == -1
+    assert velha.JogoDaVelha([[0, 0, 0], [1, 0, 1], [2, 1, 2]]) == -1
 
 
 def testeJogoIndefinido_3():
-    assert velha.JogoDaVelha([[1, 2, 0], [2, 1, 0], [2, 1, 0]]) == -1
+    assert velha.JogoDaVelha([[1, 0, 0], [2, 1, 0], [2, 1, 0]]) == -1
 
 
 # Testes para jogos empatados
@@ -53,10 +53,23 @@ def testeJogoVencedorX_1():
 
 
 def testeJogoVencedorX_2():
-    assert velha.JogoDaVelha([[0, 2, 0], [1, 1, 1], [2, 0, 2]]) == 1
+    assert velha.JogoDaVelha([[0, 2, 0], [1, 1, 1], [0, 0, 2]]) == 1
 
 
 def testeJogoVencedorX_3():
     assert velha.JogoDaVelha([[1, 2, 0], [1, 1, 2], [1, 2, 0]]) == 1
 
 
+# Testes para jogos com O ganhador
+
+
+def testeJogoVencedorO_1():
+    assert velha.JogoDaVelha([[1, 0, 2], [0, 2, 1], [2, 1, 0]]) == 2
+
+
+def testeJogoVencedorO_2():
+    assert velha.JogoDaVelha([[1, 1, 0], [2, 2, 2], [0, 0, 1]]) == 2
+
+
+def testeJogoVencedorO_3():
+    assert velha.JogoDaVelha([[1, 2, 2], [1, 1, 2], [0, 1, 2]]) == 2
