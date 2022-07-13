@@ -32,3 +32,10 @@ def testeJogoIndefinido_2():
 
 def testeJogoIndefinido_3():
     assert velha.JogoDaVelha([[1, 2, 0], [2, 1, 0], [2, 1, 0]]) == -1
+
+
+# Testes para jogos empatados
+
+
+def testeJogoEmpatado():
+    assert velha.JogoDaVelha([[1, 2, 2], [2, 1, 1], [1, 1, 2]])
