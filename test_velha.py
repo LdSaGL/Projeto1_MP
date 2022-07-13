@@ -1,6 +1,6 @@
 import velha
 
-# Testes para jogos impossíveis 
+# Testes para jogos impossíveis
 
 
 def testeJogoImpossivel_1():
@@ -73,3 +73,5 @@ def testeJogoVencedorO_2():
 
 def testeJogoVencedorO_3():
     assert velha.JogoDaVelha([[1, 2, 2], [1, 1, 2], [0, 1, 2]]) == 2
+
+# Finalizado

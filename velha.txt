@@ -76,3 +76,5 @@ Observação: por algum motivo não estava conseguindo importar o pytest no prog
         4.5.1 - Vencedor na diagonal
         4.5.1 - Vencedor na horizontal
         4.5.1 - Vencedor na vertical
+
+Finalizado

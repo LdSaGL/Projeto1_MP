@@ -51,3 +51,5 @@ def VerificaGanhador(matriz):
         return 'impossivel'
     else:
         return ganhador
+
+# Finalizado
